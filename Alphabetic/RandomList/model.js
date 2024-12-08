@@ -5,7 +5,15 @@ const ideaSchema = new mongoose.Schema({
     idea: { type: String, required: true },  // Idea text
     description: { type: String, required: true },  // Description of the idea
     url: { type: String, required: true },  // A URL or link related to the idea
-    creator: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },  // Link to the creator's user ID
+    contributorId: { 
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'User',
+        required: true 
+    },
+    contributorName: { 
+        type: String, 
+        required: true 
+    },
     createdAt: { type: Date, default: Date.now },
 });
 

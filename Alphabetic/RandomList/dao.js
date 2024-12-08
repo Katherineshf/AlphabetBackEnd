@@ -1,8 +1,16 @@
 import model from './model.js';
 
 //get all ideas for random
-export const getRandomIdeas = () => {
-  return model.find(); //all ideas from database
+export const getRandomIdeas = async () => {
+  try {
+    // Get all ideas and randomly sample them
+    const ideas = await model.aggregate([
+      { $sample: { size: 10 } }  // Returns 10 random ideas
+    ]);
+    return ideas;
+  } catch (error) {
+    throw new Error('Error fetching random ideas: ' + error.message);
+  }
 };
 
 //add a new idea
