@@ -1,0 +1,57 @@
+[
+  {
+    "_id": "userId123",
+    "email": "john.doe@example.com",
+    "password": "hashedpassword123",
+    "username": "john_doe",
+    "firstName": "John",
+    "lastName": "Doe",
+    "role": "USER",
+    "createdAt": "2024-01-01T10:00:00Z",
+    "updatedAt": "2024-01-01T10:00:00Z"
+  },
+  {
+    "_id": "userId456",
+    "email": "jane.smith@example.com",
+    "password": "hashedpassword456",
+    "username": "jane_smith",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "role": "CONTRIBUTOR",
+    "createdAt": "2024-01-10T14:30:00Z",
+    "updatedAt": "2024-01-10T14:30:00Z"
+  },
+  {
+    "_id": "userId789",
+    "email": "admin@example.com",
+    "password": "hashedpassword789",
+    "username": "admin",
+    "firstName": "Admin",
+    "lastName": "User",
+    "role": "ADMIN",
+    "createdAt": "2024-01-15T08:15:00Z",
+    "updatedAt": "2024-01-15T08:15:00Z"
+  },
+  {
+    "_id": "userId101",
+    "email": "alice.cooper@example.com",
+    "password": "hashedpassword101",
+    "username": "alice_cooper",
+    "firstName": "Alice",
+    "lastName": "Cooper",
+    "role": "USER",
+    "createdAt": "2024-02-01T12:00:00Z",
+    "updatedAt": "2024-02-01T12:00:00Z"
+  },
+  {
+    "_id": "userId202",
+    "email": "bob.jones@example.com",
+    "password": "hashedpassword202",
+    "username": "bob_jones",
+    "firstName": "Bob",
+    "lastName": "Jones",
+    "role": "USER",
+    "createdAt": "2024-03-10T16:45:00Z",
+    "updatedAt": "2024-03-10T16:45:00Z"
+  }
+]

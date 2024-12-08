@@ -1,0 +1,211 @@
+[
+    {
+      "letter": "A",
+      "idea": "Art Museum",
+      "description": "Visit an art museum to explore the creativity of different artists and art movements. Enjoy a peaceful stroll through the exhibits, and maybe even try to recreate a favorite piece of art.",
+      "url": "https://www.artmuseum.com",
+      "creator": "userId123",
+      "createdAt": "2024-12-01T10:00:00Z"
+    },
+    {
+      "letter": "B",
+      "idea": "Bee Keeping",
+      "description": "Take a bee keeping class and learn how honey is made while experiencing a hands-on activity in nature. A unique experience that brings you closer to nature and sustainability.",
+      "url": "https://www.beekeepingexperience.com",
+      "creator": "userId456",
+      "createdAt": "2024-12-02T12:30:00Z"
+    },
+    {
+      "letter": "C",
+      "idea": "Cooking Class",
+      "description": "Join a cooking class where you can learn how to make a gourmet meal together. It's a fun way to bond over food and cooking techniques, and you can enjoy the meal afterward.",
+      "url": "https://www.cookingclass.com",
+      "creator": "userId789",
+      "createdAt": "2024-12-03T15:45:00Z"
+    },
+    {
+      "letter": "D",
+      "idea": "Drive-In Movie",
+      "description": "Experience the nostalgia of a drive-in movie theater. Watch a film from the comfort of your car with a snack and your favorite person by your side.",
+      "url": "https://www.driveinmovie.com",
+      "creator": "userId101",
+      "createdAt": "2024-12-04T17:30:00Z"
+    },
+    {
+      "letter": "E",
+      "idea": "Escape Room",
+      "description": "Put your minds together in an escape room and solve puzzles to escape within a set time limit. It's a fun and challenging activity that tests your teamwork.",
+      "url": "https://www.escaperoom.com",
+      "creator": "userId102",
+      "createdAt": "2024-12-05T19:00:00Z"
+    },
+    {
+      "letter": "F",
+      "idea": "Flower Picking",
+      "description": "Spend a day at a flower farm, picking beautiful flowers to create your own bouquet. It’s a relaxing outdoor activity that brings you closer to nature.",
+      "url": "https://www.flowerpicking.com",
+      "creator": "userId103",
+      "createdAt": "2024-12-06T09:15:00Z"
+    },
+    {
+      "letter": "G",
+      "idea": "Go-Kart Racing",
+      "description": "Enjoy an adrenaline-packed day racing go-karts. It’s a fun activity that adds a little competition to your day, and it’s perfect for those who love speed.",
+      "url": "https://www.gokarting.com",
+      "creator": "userId104",
+      "createdAt": "2024-12-07T14:00:00Z"
+    },
+    {
+      "letter": "H",
+      "idea": "Hiking Trip",
+      "description": "Go on a scenic hike and enjoy nature’s beauty together. It’s a great way to bond while staying active and taking in beautiful landscapes.",
+      "url": "https://www.hikingtrip.com",
+      "creator": "userId105",
+      "createdAt": "2024-12-08T11:00:00Z"
+    },
+    {
+      "letter": "I",
+      "idea": "Ice Skating",
+      "description": "Glide across the ice at an outdoor rink or indoor arena. Whether you're an expert or a beginner, it's a fun activity that encourages laughter and teamwork.",
+      "url": "https://www.iceskating.com",
+      "creator": "userId106",
+      "createdAt": "2024-12-09T16:00:00Z"
+    },
+    {
+      "letter": "J",
+      "idea": "Jazz Night",
+      "description": "Attend a live jazz music performance at a cozy club or venue. Enjoy good music, great company, and a relaxed atmosphere.",
+      "url": "https://www.jazznight.com",
+      "creator": "userId107",
+      "createdAt": "2024-12-10T20:00:00Z"
+    },
+    {
+      "letter": "K",
+      "idea": "Karaoke Night",
+      "description": "Sing your heart out at a karaoke bar. Whether you’re singing solo or performing together, it’s a fun way to let loose and have a great time.",
+      "url": "https://www.karaokenight.com",
+      "creator": "userId108",
+      "createdAt": "2024-12-11T19:30:00Z"
+    },
+    {
+      "letter": "L",
+      "idea": "Lighthouse Visit",
+      "description": "Visit a nearby lighthouse and enjoy the scenic views. It’s a quiet, relaxing activity that allows for great photos and a peaceful time together.",
+      "url": "https://www.lighthousevisit.com",
+      "creator": "userId109",
+      "createdAt": "2024-12-12T13:00:00Z"
+    },
+    {
+      "letter": "M",
+      "idea": "Movie Marathon",
+      "description": "Pick a theme and host a movie marathon with your favorite films. Make popcorn, get cozy, and enjoy a relaxing day together.",
+      "url": "https://www.moviemarathon.com",
+      "creator": "userId110",
+      "createdAt": "2024-12-13T18:45:00Z"
+    },
+    {
+      "letter": "N",
+      "idea": "Nature Walk",
+      "description": "Take a peaceful walk through a nature reserve or park. It’s a simple, calming way to connect and enjoy each other's company.",
+      "url": "https://www.naturewalk.com",
+      "creator": "userId111",
+      "createdAt": "2024-12-14T10:30:00Z"
+    },
+    {
+      "letter": "O",
+      "idea": "Outdoor Picnic",
+      "description": "Pack a basket with your favorite food and head to a park for a picnic. Enjoy good food, great weather, and even better company.",
+      "url": "https://www.outdoorpicnic.com",
+      "creator": "userId112",
+      "createdAt": "2024-12-15T14:00:00Z"
+    },
+    {
+      "letter": "P",
+      "idea": "Pottery Class",
+      "description": "Take a pottery class together and create something beautiful. It’s a fun, hands-on experience that results in something meaningful to keep.",
+      "url": "https://www.potteryclass.com",
+      "creator": "userId113",
+      "createdAt": "2024-12-16T11:00:00Z"
+    },
+    {
+      "letter": "Q",
+      "idea": "Quirky Cafe Visit",
+      "description": "Visit a quirky, themed cafe and enjoy some fun food and drinks. It's a great place for a casual date, with plenty of interesting conversation starters.",
+      "url": "https://www.quirkycafe.com",
+      "creator": "userId114",
+      "createdAt": "2024-12-17T16:00:00Z"
+    },
+    {
+      "letter": "R",
+      "idea": "Road Trip",
+      "description": "Take a spontaneous road trip to a nearby town or scenic spot. Explore new places, enjoy the journey, and discover new adventures together.",
+      "url": "https://www.roadtrip.com",
+      "creator": "userId115",
+      "createdAt": "2024-12-18T13:30:00Z"
+    },
+    {
+      "letter": "S",
+      "idea": "Skydiving",
+      "description": "For the adventurous couple, skydiving offers an adrenaline-packed experience. Jump from a plane together and enjoy an unforgettable view of the world below.",
+      "url": "https://www.skydiving.com",
+      "creator": "userId116",
+      "createdAt": "2024-12-19T15:00:00Z"
+    },
+    {
+      "letter": "T",
+      "idea": "Theater Show",
+      "description": "Attend a live theater performance. Whether it's a play, musical, or improv show, it’s an exciting and cultural way to spend an evening.",
+      "url": "https://www.theatershow.com",
+      "creator": "userId117",
+      "createdAt": "2024-12-20T17:30:00Z"
+    },
+    {
+      "letter": "U",
+      "idea": "Urban Exploration",
+      "description": "Explore hidden gems in your city, from old factories to abandoned buildings. It's an adventurous way to discover new things in familiar places.",
+      "url": "https://www.urbanexploration.com",
+      "creator": "userId118",
+      "createdAt": "2024-12-21T14:00:00Z"
+    },
+    {
+      "letter": "V",
+      "idea": "Vineyard Tour",
+      "description": "Visit a local vineyard for a tour and wine tasting. Learn about wine-making while enjoying a relaxing time in the beautiful vineyard surroundings.",
+      "url": "https://www.vineyardtour.com",
+      "creator": "userId119",
+      "createdAt": "2024-12-22T18:00:00Z"
+    },
+    {
+      "letter": "W",
+      "idea": "Water Park",
+      "description": "Have a splash at a water park, with thrilling slides and wave pools. It's a fun and exciting date for those who love to stay active and cool off.",
+      "url": "https://www.waterpark.com",
+      "creator": "userId120",
+      "createdAt": "2024-12-23T11:00:00Z"
+    },
+    {
+      "letter": "X",
+      "idea": "Xtreme Sports",
+      "description": "Try an extreme sport like bungee jumping or ziplining. Perfect for those who are seeking adrenaline-packed experiences.",
+      "url": "https://www.xtremesports.com",
+      "creator": "userId121",
+      "createdAt": "2024-12-24T13:30:00Z"
+    },
+    {
+      "letter": "Y",
+      "idea": "Yoga Retreat",
+      "description": "Attend a yoga retreat to relax and rejuvenate. It’s a peaceful getaway where you can connect both physically and spiritually.",
+      "url": "https://www.yogaretreat.com",
+      "creator": "userId122",
+      "createdAt": "2024-12-25T10:00:00Z"
+    },
+    {
+      "letter": "Z",
+      "idea": "Zoo Visit",
+      "description": "Spend the day at a local zoo, learning about animals from around the world. It's an educational and fun way to spend time together.",
+      "url": "https://www.zoovisit.com",
+      "creator": "userId123",
+      "createdAt": "2024-12-26T12:00:00Z"
+    }
+]
+  
