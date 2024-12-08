@@ -3,9 +3,10 @@ import model from './model.js';
 //get all ideas for random
 export const getRandomIdeas = async () => {
   try {
-    // Get all ideas and randomly sample them
+    // get all ideas and randomly sample them
     const ideas = await model.aggregate([
-      { $sample: { size: 10 } }  // Returns 10 random ideas
+      { $sample: { size: 10 } },
+      { $project: { letter: 1, idea: 1 } }  // only return these fields
     ]);
     return ideas;
   } catch (error) {
