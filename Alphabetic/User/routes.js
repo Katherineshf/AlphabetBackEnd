@@ -44,7 +44,7 @@ export default function UserRoutes(app){
     if (!currentUser) {
       return res.sendStatus(401);  // If no user is logged in
     }
-    await dao.updateUser(currentUser._id, updatedData);
+    await dao.updateUser(currentUser._id, req.body);
     const updatedUser = await dao.findUserByEmail(currentUser.email);
     req.session['currentUser'] = updatedUser;  // Update the session with the new user data
     res.json(updatedUser); 

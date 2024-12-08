@@ -25,7 +25,7 @@ export const addIdea = async (ideaData) => {
 // fetch ideas by their letter
 export const searchIdeaByLetter = async (letter) => {
   try {
-    // Fetch ideas that match the letter (case-insensitive)
+    //get ideas that match the letter (case-insensitive)
     const ideas = await model.find({ letter: new RegExp(`^${letter}`, 'i') });  // Use regex for case-insensitive search
     return ideas;
   } catch (error) {
@@ -36,7 +36,7 @@ export const searchIdeaByLetter = async (letter) => {
 // fetch an idea by its ID
 export const getIdeaById = async (ideaId) => {
   try {
-    const idea = await model.findById(ideaId);  // Fetch the idea from the database by its ID
+    const idea = await model.findById(ideaId); 
     return idea;
   } catch (error) {
     throw new Error('Error fetching idea by ID: ' + error.message);

@@ -14,10 +14,10 @@ const app = express();
 
 
 app.use(cors({
-  origin: "http://localhost:3000",    // React frontend URL
-  credentials: true,                  // Important for cookies/sessions
+  origin: process.env.FRONTEND_URL ||"http://localhost:3000", 
+  credentials: true,                  
   methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type"]
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 app.use(session({
