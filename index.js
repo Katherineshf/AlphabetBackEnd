@@ -34,7 +34,8 @@ RandomListRoutes(app);
 SearchPageRoutes(app);
 UserRoutes(app);
 DetailsRoutes(app);
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4001;
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
+    console.log(`Accepting requests from: ${process.env.FRONTEND_URL}`);  // Add this to debug
 });
