@@ -8,6 +8,7 @@ import RandomListRoutes from "./Alphabetic/RandomList/routes.js";
 import SearchPageRoutes from "./Alphabetic/SearchPage/routes.js";
 import UserRoutes from "./Alphabetic/User/routes.js";
 import DetailsRoutes from "./Alphabetic/Details/routes.js";
+import BucketListRoutes from './BucketList/routes.js';
 mongoose.connect(process.env.MONGO_CONNECTION_STRING || "mongodb://127.0.0.1:27017/Alphabetic");
 
 const app = express();
@@ -34,6 +35,7 @@ RandomListRoutes(app);
 SearchPageRoutes(app);
 UserRoutes(app);
 DetailsRoutes(app);
+BucketListRoutes(app);
 const port = process.env.PORT || 4001;
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
