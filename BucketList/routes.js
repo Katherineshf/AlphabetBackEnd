@@ -1,54 +1,58 @@
-// BucketList/routes.js
 import * as dao from './dao.js';
 
 export default function BucketListRoutes(app) {
-  // Authentication middleware
+  // Authentication middleware remains the same
   const authMiddleware = (req, res, next) => {
     const currentUser = req.session["currentUser"];
     if (!currentUser) {
-      return res.status(401).json({ message: "You must be logged in" });
+      res.status(401).json({ message: "You must be logged in" });
+      return;
     }
     req.user = currentUser;
     next();
   };
 
-  // Add an idea to bucket list
+  // Add better error logging
   const addToBucketList = async (req, res) => {
     try {
       const { ideaId } = req.body;
       const userId = req.user.id;
-      const bucketList = await dao.addIdea(userId, ideaId);
+      console.log(`Adding idea ${ideaId} to bucket list for user ${userId}`);
+      const bucketList = await dao.addIdeaToBucketList(userId, ideaId);
       res.status(200).json(bucketList);
     } catch (error) {
+      console.error('Error adding to bucket list:', error);
       res.status(500).json({ error: 'Server error' });
     }
   };
 
-  // Remove an idea from bucket list
   const removeFromBucketList = async (req, res) => {
     try {
       const { ideaId } = req.params;
       const userId = req.user.id;
-      const bucketList = await dao.removeIdea(userId, ideaId);
+      console.log(`Removing idea ${ideaId} from bucket list for user ${userId}`);
+      const bucketList = await dao.removeIdeaFromBucketList(userId, ideaId);
       res.status(200).json(bucketList);
     } catch (error) {
+      console.error('Error removing from bucket list:', error);
       res.status(500).json({ error: 'Server error' });
     }
   };
 
-  // Get user's bucket list
   const getBucketList = async (req, res) => {
     try {
       const userId = req.user.id;
-      const ideas = await dao.findBucketList(userId);
+      console.log(`Fetching bucket list for user ${userId}`);
+      const ideas = await dao.getBucketList(userId);
       res.status(200).json(ideas);
     } catch (error) {
+      console.error('Error getting bucket list:', error);
       res.status(500).json({ error: 'Server error' });
     }
   };
 
-  // Define routes
-  app.post("/api/bucket-list/add", authMiddleware, addToBucketList);
-  app.delete("/api/bucket-list/remove/:ideaId", authMiddleware, removeFromBucketList);
-  app.get("/api/bucket-list", authMiddleware, getBucketList);
+  // Update routes to match frontend expectations
+  app.post("/api/bucketlist/add", authMiddleware, addToBucketList);
+  app.delete("/api/bucketlist/remove/:ideaId", authMiddleware, removeFromBucketList);
+  app.get("/api/bucketlist", authMiddleware, getBucketList);
 }

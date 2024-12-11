@@ -1,6 +1,6 @@
-import model from "./model.js";
+import BucketList from './model.js';
 
-exports.addIdeaToBucketList = async (userId, ideaId) => {
+export const addIdeaToBucketList = async (userId, ideaId) => {
   let bucketList = await BucketList.findOne({ userId });
   if (!bucketList) {
     bucketList = new BucketList({ userId, ideas: [] });
@@ -14,7 +14,7 @@ exports.addIdeaToBucketList = async (userId, ideaId) => {
   return bucketList;
 };
 
-exports.removeIdeaFromBucketList = async (userId, ideaId) => {
+export const removeIdeaFromBucketList = async (userId, ideaId) => {
   const bucketList = await BucketList.findOne({ userId });
   if (bucketList) {
     bucketList.ideas = bucketList.ideas.filter(id => id.toString() !== ideaId);
@@ -24,7 +24,7 @@ exports.removeIdeaFromBucketList = async (userId, ideaId) => {
   return bucketList;
 };
 
-exports.getBucketList = async (userId) => {
+export const getBucketList = async (userId) => {
   const bucketList = await BucketList.findOne({ userId }).populate('ideas');
   return bucketList ? bucketList.ideas : [];
 }; 
